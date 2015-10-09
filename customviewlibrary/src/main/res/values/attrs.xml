@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextView">
+        <attr name="typeface" format="string">
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TextViewAnimation">
+        <attr name="animation_style" format="integer">
+            <enum name="blink" value="0"/>
+            <enum name="bounce" value="1"/>
+            <enum name="fade_in" value="2"/>
+            <enum name="fade_out" value="3"/>
+            <enum name="move" value="4"/>
+            <enum name="rotate" value="5"/>
+            <enum name="sequential" value="6"/>
+            <enum name="slide_down" value="7"/>
+            <enum name="slide_up" value="8"/>
+            <enum name="together" value="9"/>
+            <enum name="zoom_in" value="10"/>
+            <enum name="zoom_out" value="11"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
