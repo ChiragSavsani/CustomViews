@@ -4,4 +4,6 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_github">Github</string>
+    <string name="long_text">“If people aren\'t laughing at your dreams\, your dreams aren\'t big enough.”</string>
+    <string name="short_text">“Short Text”</string>
 </resources>

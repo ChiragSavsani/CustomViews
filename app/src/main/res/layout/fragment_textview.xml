@@ -53,11 +53,22 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
         android:textStyle="bold"
         android:textSize="18sp"
         android:text="TextView Animation"
         customtextview:animation_style="zoom_in" />
 
+
+    <chiragsavsani.customviewlibrary.textview.ScrollingText
+        android:id="@+id/scrollTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:text="@string/long_text"
+        android:textSize="20dp"
+        customtextview:scrollType="ifLengthExceeds"
+        customtextview:typeface="Oswald-BoldItalic.ttf" />
 
 </LinearLayout>

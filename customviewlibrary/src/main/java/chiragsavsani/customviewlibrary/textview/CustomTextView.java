@@ -15,25 +15,25 @@ public class CustomTextView extends TextView {
 
     public CustomTextView(Context context) {
         super(context);
-        init(null);
+        init(context,null);
     }
 
     public CustomTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init(attrs);
+        init(context,attrs);
     }
 
     public CustomTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(attrs);
+        init(context,attrs);
     }
 
-    private void init(AttributeSet attrs){
+    private void init(Context context,AttributeSet attrs){
         if(attrs != null){
-            TypedArray tArray = getContext().obtainStyledAttributes(attrs, R.styleable.CustomTextView);
+            TypedArray tArray = context.obtainStyledAttributes(attrs, R.styleable.CustomTextView);
             String typeface  = tArray.getString(R.styleable.CustomTextView_typeface);
             if (typeface != null) {
-                Typeface myTypeface = Typeface.createFromAsset(getContext().getAssets(), "fonts/"+typeface);
+                Typeface myTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/"+typeface);
                 setTypeface(myTypeface);
             }
             tArray.recycle();

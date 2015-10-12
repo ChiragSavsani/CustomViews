@@ -4,6 +4,13 @@
         <attr name="typeface" format="string">
         </attr>
     </declare-styleable>
+    <declare-styleable name="ScrollingText">
+        <attr name="scrollType" format="string">
+            <enum name="always" value="0" />
+            <enum name="ifLengthExceeds" value="1" />
+        </attr>
+        <attr name="typeface" />
+    </declare-styleable>
 
     <declare-styleable name="TextViewAnimation">
         <attr name="animation_style" format="integer">
